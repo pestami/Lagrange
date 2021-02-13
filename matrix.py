@@ -23,7 +23,7 @@ def MV_Multiply(a,b):
 Material=['MNHA1234561','MNHA1234600','MNHA1234700']
 SUCHBEGRIFF=['(1)','(2)','(3)']
 Quantity=[['1','0','1'],['1','2','0'],['3','3','3']]
-Article=['ART01','ART02']
+Article=['ART01','ART02','ART03']
 
 
 X= VV_Multiply(SUCHBEGRIFF,Material)
@@ -32,7 +32,8 @@ CR= MV_Multiply(Quantity,X)
 print ("==================================================")
 print ("BOM FOR SAP UPLOAD:")
 print()
+i=0
 for item in CR:
-    i=+1
-    print( Article[i]  +"= "  +" ".join(item))
+    i+=1
+    print( Article[i-1]  +"= "  +" ".join(item))
     print()
