@@ -2,14 +2,14 @@ from operator import add
 import numpy as np
 
 def VV_Multiply(a,b):
-    DELIMITER=['\ ','\ ','\ ']
+    DELIMITER=[' ',' ',' ']
     CR=[]
     b=list( map(add, DELIMITER,b))
     c=list( map(add, a,b))
     return c
 
 def MV_Multiply(a,b):
-    DELIMITER=['\ ','\ ','\ ']
+    DELIMITER=[' ',' ',' ']
     CR=[]
     b=list( map(add, DELIMITER,b))
     for item in a:
@@ -21,7 +21,7 @@ def MV_Multiply(a,b):
 
 
 Material=['MNHA1234561','MNHA1234600','MNHA1234700']
-SUCHBEGRIFF=['1','2','3']
+SUCHBEGRIFF=['(1)','(2)','(3)']
 Quantity=[['1','0','1'],['1','2','0'],['3','3','3']]
 Article=['ART01','ART02']
 
